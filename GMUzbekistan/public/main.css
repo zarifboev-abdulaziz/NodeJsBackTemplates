@@ -1,0 +1,260 @@
+:root {
+    font-size: 10px;
+    font-family: -apple-system, "Open Sans", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section {
+}
+
+
+/* Navbars */
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    font-size: 1.7rem;
+}
+
+.logo {
+    transition: color .3s;
+}
+
+.logo:hover {
+    border-bottom: 2px solid deepskyblue;
+}
+
+.nav {
+    display: flex;
+    font-weight: 500;
+
+}
+
+.nav-item {
+    margin-right: 3rem;
+    transition: color .3s;
+}
+
+.nav-item:hover {
+    color: #01a6dc;
+    border-bottom: 2px solid deepskyblue;
+}
+
+.title1 {
+    color: #03a9f4;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 0 13px;
+    font-family: "Oswald", "Open Sans", sans-serif;
+    line-height: 33px;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.home-content > p {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    line-height: 24px;
+}
+
+ul {
+    line-height: 1.5;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+/* News list */
+.cars-list {
+    margin-top: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.car {
+    /*max-height: 20rem;*/
+    display: flex;
+    /*box-shadow: 0px 2px 2px rgba(180, 180, 180, 0.25);*/
+    box-shadow: 6px 5px 23px -8px rgba(0,0,0,0.55);
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.car:hover {
+    background: #e8e8e8;
+    box-shadow: 6px 5px 10px -2px rgba(0,0,0,0.55);
+}
+
+.img-block {
+    border-radius: 10px 0 0 10px;
+    max-width: 480px;
+    max-height: 320px;
+    overflow: hidden;
+}
+
+.car-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.car:hover .car-image {
+    transform: scale(1.05);
+}
+
+.car-content {
+    padding: 1rem 2rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+.car-name {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #03a9f4
+}
+
+.car-charachteristics {
+    width: 40rem;
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+.car-attribute {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.car-attribute > div {
+    display: flex;
+    align-items: center;
+}
+
+/*Icons */
+.icon {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+.delete-btn {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.update-btn {
+    color: #fff;
+    margin-right: 1rem;
+    background-color: #007bff;
+}
+
+/*.add-btn {*/
+/*    color: #fff;*/
+/*    background-color: var(--color-primary);*/
+/*    border-color: var(--color-secondary);*/
+/*}*/
+
+/*.add-btn:hover {*/
+/*    background-color: #51aaff;*/
+/*    border-color: var(--color-primary);*/
+/*}*/
+
+.update-btn:hover {
+    background-color: #0062cc;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    color: #fff;
+    background-color: #c82333;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*Forms*/
+.form {
+    max-width: 60%;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+.input {
+    width: 100%;
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    border: 1px solid dodgerblue;
+}
+
+.input:focus {
+    outline: 0;
+    border: 1px solid darkblue;
+    box-shadow: 3px 4px 8px 2px rgba(33, 94, 175, 0.2);
+}
+
+
+/* Titles */
+.page-title{
+    width: 100%;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: #2C3E50;
+    margin-bottom: 2rem;
+    border-radius: 3px;
+}
+
+

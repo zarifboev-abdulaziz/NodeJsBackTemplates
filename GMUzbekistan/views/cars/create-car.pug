@@ -1,0 +1,55 @@
+extends ../layout.pug
+
+block content
+    section
+        h1.page-title Create Car
+
+        if car
+            form.form(action=`/cars/update/${car.id}`, method="POST")
+                label Car Name
+                input.input#title(type="text", name="name" value= car.name required)
+
+                label Car Image Link Address
+                input.input(type="text", name="linkAddress" value= car.linkAddress required)
+
+                label Trunk Volume
+                input.input(type="text", name="trunkVolume" value= car.trunkVolume  required)
+
+                label Transmission
+                input.input(type="text", name="transmission" value= car.transmission  required)
+
+                label Safety
+                input.input(type="text", name="safety" value= car.safety  required)
+
+                label Fuel consumption
+                input.input(type="text", name="fuelConsumption" value= car.fuelConsumption  required)
+
+                label Airbags
+                input.input(type="text", name="airbags" value= car.airbags  required)
+
+                button.input.btn.update-btn Update Car
+
+        else
+            form.form(action="/cars/create", method="POST")
+                label Car Name
+                input.input#title(type="text", name="name" required)
+
+                label Car Image Link Address
+                input.input(type="text", name="linkAddress" required)
+
+                label Trunk Volume
+                input.input(type="text", name="trunkVolume" required)
+
+                label Transmission
+                input.input(type="text", name="transmission" required)
+
+                label Safety
+                input.input(type="text", name="safety" required)
+
+                label Fuel consumption
+                input.input(type="text", name="fuelConsumption" required)
+
+                label Airbags
+                input.input(type="text", name="airbags" required)
+
+                button.input.btn.update-btn Add Car

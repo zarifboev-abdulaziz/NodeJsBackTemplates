@@ -1,0 +1,46 @@
+extends ../layout.pug
+
+block content
+    section
+            h1.page-title Car List
+
+
+            div.cars-list
+
+                each car in carsList
+
+                    div.car
+                        div.img-block
+                            img.car-image(src=`${car.linkAddress}`)
+                        div.car-content
+                            h3.car-name #{car.name}
+                            div.car-charachteristics
+                                div.car-attribute
+                                    div
+                                        img.icon(src='https://uzautomotors.com/chevro/images/caricon/obembag.png')
+                                        span Trunk volume
+                                    p #{car.trunkVolume}
+                                div.car-attribute
+                                    div
+                                        img.icon(src='https://uzautomotors.com/chevro/images/caricon/transmis.png')
+                                        span Transmission
+                                    p #{car.transmission}
+                                div.car-attribute
+                                    div
+                                        img.icon(src='https://uzautomotors.com/chevro/images/caricon/logoabs.png')
+                                        span Safety
+                                    p #{car.safety}
+                                div.car-attribute
+                                    div
+                                        img.icon(src='https://uzautomotors.com/chevro/images/caricon/toplivo.png')
+                                        span Fuel consumption
+                                    p #{car.fuelConsumption}
+                                div.car-attribute
+                                    div
+                                        img.icon(src='https://uzautomotors.com/chevro/images/caricon/tar5.png')
+                                        span Airbags
+                                    p #{car.airbags}
+
+                            div.group-controls
+                                a.btn.update-btn(href=`/cars/update/${car.id}`) Edit
+                                a.btn.delete-btn(href=`/cars/delete/${car.id}`) Delete

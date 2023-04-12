@@ -1,0 +1,18 @@
+extends layout.pug 
+
+block content 
+    section.section.page
+        h1= title
+
+        if students.length
+            ul.list
+                each student in students
+                    li.list-item 
+                        a(href="/students") #{student.fullname} #{student.age} years old.
+                        div 
+                            button.update-btn(data-id= student.id) Update
+                            button.delete-btn(data-id= student.id) Delete 
+                         
+
+        else 
+            h4 No records found 

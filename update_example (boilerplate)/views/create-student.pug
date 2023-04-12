@@ -1,0 +1,38 @@
+extends layout.pug 
+
+block content 
+    section.section.page
+        h1= title
+
+        if student
+
+            form.form#update-form(data-id= student.id)
+                label Fullname
+                input.input(type="text", name="fullname" value= student.fullname)
+
+                label Age
+                input.input(type="number", name="age", value= student.age)
+
+                label Module 
+                select.input(name="module")
+                    each module in modules 
+                        if module.moduleId == student.module
+                            option(value= module.moduleId, selected) #{ module.title }
+                        else      
+                            option(value= module.moduleId) #{ module.title }
+                button.input#update-record Update             
+        
+        else 
+            form.form(action="/students/create", method="POST")
+                label Fullname
+                input.input(type="text", name="fullname")
+
+                label Age
+                input.input(type="number", name="age")
+
+                label Module 
+                select.input(name="module")
+                    each module in modules 
+                        option(value= module.moduleId, selected) #{ module.title }     
+                
+                button.input Submit 
