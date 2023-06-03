@@ -1,7 +1,6 @@
-# News App
+# General Motors Website
 
-In the news index, people can read latest news. Users can read news by topics. 
-Soon, Admin users will have the privilege to add, edit and delete news. 
+In the General Motors website, All the GM UZ cars will be provided with detailed information to the customers. Customers can ananlyze and compare the cars. And Admin user can do all the CRUD operations on the car object. 
 
 #### Intsructions
 1. Download the source code
@@ -15,7 +14,7 @@ git clone
 npm install 
 ```
 
-3. Run the News index
+3. Run the Application on port 3000
 ```bash
 node index
 ```
@@ -26,7 +25,7 @@ node index
 - uniqid
 
 
-## Link to github repo
+### Link to Public repository on GitHub
 
 
-#### Link to hosted application on Glitch
+### Link to hosted application
